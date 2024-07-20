@@ -1,0 +1,40 @@
+package dio.padroesProjeto.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import dio.padroesProjeto.ClienteService;
+import dio.padroesProjeto.model.Cliente;
+import dio.padroesProjeto.model.ClienteRepository;
+
+@Service
+public class ClienteServiceImpl implements ClienteService {
+	@Autowired
+	private ClienteRepository clienteRepository;
+
+	@Override
+	public Iterable<Cliente> buscarTodos() {
+		return clienteRepository.findAll();
+	}
+
+	@Override
+	public Cliente buscarPorId(Long id) {
+		Optional<Cliente> cliente = clienteRepository.findById(id);
+		return cliente;
+	}
+
+	@Override
+	public void inserirCliente(Cliente cliente) {
+
+	}
+
+	@Override
+	public void atualizar(Long id, Cliente cliente) {
+
+	}
+
+	@Override
+	public void deletar(Long id) {
+
+	}
+}

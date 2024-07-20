@@ -1,0 +1,12 @@
+package dio.padroesProjeto;
+
+import dio.padroesProjeto.model.Cliente;
+
+public interface ClienteService {
+	Iterable<Cliente> buscarTodos();
+	Cliente buscarPorId();
+	void inserirCliente();
+	void atualizar();
+	void deletar();
+	
+}

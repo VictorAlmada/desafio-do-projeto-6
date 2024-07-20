@@ -1,0 +1,5 @@
+package dio.padroesProjeto.model;
+
+public class Cliente {
+
+}

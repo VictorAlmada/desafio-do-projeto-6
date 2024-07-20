@@ -1,0 +1,3 @@
+spring.application.name=padroesProjeto
+
+springfox.documentation.swagger.v2.path=/api-docs
